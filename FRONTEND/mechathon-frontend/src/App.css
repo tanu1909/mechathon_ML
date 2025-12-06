@@ -1,42 +1,69 @@
-.container {
-  width: 350px;
-  margin: auto;
-  margin-top: 40px;
-  text-align: center;
-  font-family: Arial;
- 
-}
-
-.container .h2 {
-  color: aquamarine;
-}
-
-.preview {
-  width: 250px;
-  margin-top: 20px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  display: flex;
-}
-
-button {
-  margin-top: 20px;
-  padding: 10px 20px;
-  cursor: pointer;
-  background: black;
-  color: rgb(231, 225, 225);
-  border: none;
-  border-radius: 6px;
-  font-size: 15px;
-}
-
 
 body {
-
   display: flex;
   justify-content: center;
+  align-items: center;
   min-height: 100vh;
-  background-color: #0d1b2a;
+  margin: 0;
 
-  
+  background-color: #0f0c29; 
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color: #e0e1dd;
 }
+
+.container {
+  width: 400px;
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  
+
+  background: rgba(30, 20, 50, 0.4);
+  backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(218, 34, 255, 0.2); 
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+  
+
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), 
+              box-shadow 0.3s ease, 
+              border-color 0.3s ease;
+}
+
+
+.container:hover {
+  transform: scale(1.03) translateY(-5px);
+
+  box-shadow: 0 20px 50px rgba(151, 51, 238, 0.3);
+  border-color: rgba(218, 34, 255, 0.5);
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-size: 26px;
+  letter-spacing: 1px;
+  /* color gradient */
+  background: linear-gradient(90deg, #ff00cc, #333399);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+/* File Input Styling */
+input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  color: #ccc;
+  border: 1px dashed rgba(255, 255, 255, 0.1);
+}
+
+input[type="file"]::file-selector-button {
+  margin-right: 15px;
+  border: none;
+
+  background: #6a00f4;
