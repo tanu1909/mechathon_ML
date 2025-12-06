@@ -1,0 +1,42 @@
+.container {
+  width: 350px;
+  margin: auto;
+  margin-top: 40px;
+  text-align: center;
+  font-family: Arial;
+ 
+}
+
+.container .h2 {
+  color: aquamarine;
+}
+
+.preview {
+  width: 250px;
+  margin-top: 20px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  display: flex;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  background: black;
+  color: rgb(231, 225, 225);
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+
+body {
+
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #0d1b2a;
+
+  
+}
